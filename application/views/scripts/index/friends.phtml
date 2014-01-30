@@ -1,0 +1,14 @@
+<h2>Friends</h2>
+            <?php if($this->friends): ?>
+            <ul>
+            <?php foreach ($this->friends as $friend) : ?>
+                <li><div>
+                Friend: <?= $friend->getName() ?><br>
+                Country: <?= $friend->getCountry() ?><br>
+                Age: <?= $friend->getAge() ?><br>
+                </div></li>
+             <?php endforeach; ?>
+              </ul>
+            <?php else: ?>
+            <p>No friends for user <?= $this->lastUser; ?> </p>
+            <?php endif; ?>

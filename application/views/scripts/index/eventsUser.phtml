@@ -1,0 +1,29 @@
+       <h2>Events based on <?php $this->lastUser; ?> tracks</h2>
+            <?php if($this->userEvents): ?>
+           
+            <ul>
+            <?php foreach($this->userEvents as $key => $evt) : ?>
+
+                <?php if(is_object($evt)): ?>
+                    <li>
+                         <div>                
+                            Event Number: <?=($key + 1) ?> <br>
+                            Based on track: <?= $evt->track; ?> by <?= $evt->artist; ?><br>
+                            Event Name <?= $evt->getTitle()?> <br>
+                            Artists:<?=implode(", ", $evt->getArtists())?> <br>
+                            Venue: <?= $evt->getVenue()->getName()?> <br>
+                            Location:<?= 
+                                $evt->getVenue()->getLocation()->getStreet() . " " .
+                                $evt->getVenue()->getLocation()->getCity() . " " .
+                                $evt->getVenue()->getLocation()->getCountry()?>  <br>
+                            Description:<?= $evt->getDescription()?> <br>
+                            Event URL: <?= $evt->getUrl()?><br>
+                        </div>
+                    </li>
+                <?php endif; ?>
+             <?php endforeach; ?>
+              </ul>
+           
+            <?php else: ?>
+            <p>No events for users playlist</p>
+            <?php endif; ?>

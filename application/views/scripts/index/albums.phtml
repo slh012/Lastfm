@@ -1,0 +1,10 @@
+<?php if($this->album): ?>
+            <h2><?= $this->albumName; ?></h2>
+            <div>
+            Number of Plays <?= $this->album->getPlayCount(); ?> time(s)<br>
+            Cover: <img src="<?= $this->album->getImage(4)  ?>"><br>
+            Album URL: <?= $this->album->getUrl() ?> <br>
+            </div>
+            <?php else: ?>
+            <p>No album <?= $this->albumName; ?> not found</p>
+            <?php endif; ?>

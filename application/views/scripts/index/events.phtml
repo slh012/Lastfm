@@ -1,0 +1,23 @@
+<h2>Events</h2>
+            <?php if (!empty($this->events)) : ?>
+               <ul>
+            <?php   foreach ($this->events as $key => $evt) : ?>
+                   <li>
+                       <div>
+                        Event Number: <?=($key + 1) ?> <br>
+                        Event Name <?= $evt->getTitle()?> <br>
+                        Artists:<?=implode(", ", $evt->getArtists())?> <br>
+                        Venue: <?= $evt->getVenue()->getName()?> <br>
+                        Location:<?= 
+                            $evt->getVenue()->getLocation()->getStreet() . " " .
+                            $evt->getVenue()->getLocation()->getCity() . " " .
+                            $evt->getVenue()->getLocation()->getCountry()?>  <br>
+                        Description:<?= $evt->getDescription()?> <br>
+                        Event URL: <?= $evt->getUrl()?><br>
+                        </div>
+                   </li>
+             <?php endforeach; ?>
+              </ul>
+            <?php else: ?>
+            <p>No events for <?= $this->artistName; ?> </p>
+                  <?php endif; ?>

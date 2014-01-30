@@ -1,0 +1,18 @@
+  <h2>Listened to</h2>
+            <?php if($this->userTracks): ?>
+             <div class="pre-scrollable">
+            <ul>
+            <?php foreach($this->userTracks as $key => $track) : ?>
+                <li><div>
+                Track Number: <?= ($key + 1); ?><br>
+                Title: <?= $track->getName(); ?><br>
+                Artist: <?= $track->getArtist(); ?><br>
+                Album: <?= $track->getAlbum(); ?><br>
+                Track URL: <?= $track->getUrl(); ?><br>
+                </div></li>
+             <?php endforeach; ?>
+              </ul>
+            </div>
+            <?php else: ?>
+            <p>No tracks for user <?= $this->lastUser; ?> </p>
+            <?php endif; ?>

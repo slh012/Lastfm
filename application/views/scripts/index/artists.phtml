@@ -1,0 +1,15 @@
+      <h2>Artist</h2>
+            <?php if($this->results): ?>
+            <ul>
+            <?php while ($artist = $this->results->current()) :
+                echo "<li><div>";
+                echo "Artist URL: " . $artist->getUrl() . "<br>";
+                echo '<img src="' . $artist->getImage(4) . '">';
+                echo "</div></li>";
+
+                $artist = $this->results->next();
+            endwhile; ?>
+            </ul>
+            <?php else: ?>
+            <p>No artist</p>
+            <?php endif; ?>

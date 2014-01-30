@@ -1,0 +1,18 @@
+  <?php if($this->tracks): ?>
+            <h2>Top Tracks</h2>
+
+            <ul>
+            <?php foreach($this->tracks as $key => $track) : ?>
+
+                Track Number: <?= ($key + 1) ?> <br>
+                Title: <?= $track->getName() ?> <br>
+                Played: <?= $track->getPlayCount() ?> time(s)<br>
+                Duration: <?= $track->getDuration() ?> seconds<br
+                Track URL: <?= $track->getUrl()?> <br>
+                </div></li>
+            <?php    endforeach; ?>
+            </ul>
+
+            <?php else: ?>
+            <p>No tracks for <?= $this->artistName; ?> </p>
+            <?php endif; ?>

@@ -1,0 +1,35 @@
+<!-- application/layouts/scripts/layout.phtml -->
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Zend Framework Quickstart Application</title>
+  
+ 
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBklqxTsGaaLfF_RLycV0DJe4yC8plzi0s&sensor=false">
+    </script>
+  
+  
+  <?php $this->headLink()->appendStylesheet( "/css/ie{$this->minjs}.css", 'screen', 'projection', 'IE') ?>
+  <?php $this->headLink()->appendStylesheet( "/css/print{$this->minjs}.css", 'print') ?>  
+  <?php $this->headLink()->appendStylesheet( "/css/global{$this->minjs}.css", 'screen, projection') ?>
+  <?=$this->headLink(); ?>
+  
+  
+  
+</head>
+<body>
+ <?php  echo $this->render('topnav.phtml');  ?>
+    
+     <div class="container">
+
+      <div class="starter-template">
+          <?php echo $this->layout()->content ?>
+      </div>
+
+    </div><!-- /.container -->
+    <?php echo $this->render('footer.phtml')?>
+    <script data-main="/scripts/main<?=$this->minjs?>.js" src="/scripts/require-jquery<?=$this->minjs?>.js"></script>
+</body>
+</html>

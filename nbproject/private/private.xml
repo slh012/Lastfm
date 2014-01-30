@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/wamp/www/zendeg/lastfm/public/css/bootstrap.css</file>
+            <file>file:/C:/wamp/www/zendeg/lastfm/public/css/screen.css</file>
+            <file>file:/C:/wamp/www/zendeg/lastfm/public/scripts/main.js</file>
+            <file>file:/C:/wamp/www/zendeg/lastfm/application/views/scripts/index/index.phtml</file>
+            <file>file:/C:/wamp/www/zendeg/lastfm/application/layouts/scripts/topnav.phtml</file>
+            <file>file:/C:/wamp/www/zendeg/lastfm/application/Bootstrap.php</file>
+            <file>file:/C:/wamp/www/zendeg/lastfm/application/models/Lastfm/User.php</file>
+            <file>file:/C:/wamp/www/zendeg/lastfm/public/scripts/googleMapsEvents.js</file>
+            <file>file:/C:/wamp/www/zendeg/lastfm/library/LastfmExt/MapsFactory.php</file>
+            <file>file:/C:/wamp/www/zendeg/lastfm/application/models/Lastfm/Artist.php</file>
+            <file>file:/C:/wamp/www/zendeg/lastfm/application/models/Lastfm/maps/Google.php</file>
+            <file>file:/C:/wamp/www/zendeg/lastfm/library/LastfmExt/MapsInterface.php</file>
+            <file>file:/C:/wamp/www/zendeg/lastfm/public/css/global.css</file>
+            <file>file:/C:/wamp/www/zendeg/lastfm/public/scripts/utils.js</file>
+            <file>file:/C:/wamp/www/zendeg/lastfm/library/LastfmExt/Track.php</file>
+            <file>file:/C:/wamp/www/zendeg/lastfm/application/controllers/ArtistController.php</file>
+            <file>file:/C:/wamp/www/zendeg/lastfm/application/controllers/IndexController.php</file>
+            <file>file:/C:/wamp/www/zendeg/lastfm/application/configs/application.ini</file>
+        </group>
+    </open-files>
+</project-private>
